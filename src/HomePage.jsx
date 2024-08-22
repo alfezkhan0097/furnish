@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import ProductSection from "./ProductSection";
 import HeroWithPagination from "./HeroWithPagination";
 import TrendingCategory from "./TrendingCatagory";
-import Showcase from "./showcase";
+import Showcase from "./Showcase";
 import Footer from "./Footer";
 import AboutUs from "./AboutUs";
 import TestimonialSection from "./TestimonialSection";
