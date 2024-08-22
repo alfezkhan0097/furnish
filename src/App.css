@@ -1,0 +1,20 @@
+/* Custom scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #222; /* Background of the track */
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: black; /* Color of the thumb */ /* Rounded corners */
+    max-height: 50px;
+    margin: 1px;
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 208, 0); /* Color of the thumb on hover */
+  }
