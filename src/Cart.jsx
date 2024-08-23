@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-
+import Header from "./Header";
 function Cart() {
   const [cartItems, setCartItems] = useState([])
   const removeFromCart = (index) => {
@@ -24,7 +24,9 @@ function Cart() {
 
 
   return (
-    <div className="p-4 bg-neutral-900 min-h-screen">
+    <div className="bg-neutral-900 text-white">
+    <Header/>
+        <div className="p-12 min-h-screen">
       <h1 className="text-2xl text-white mb-4">Your Cart</h1>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
@@ -59,6 +61,7 @@ function Cart() {
       <Link to="/" className="block mt-4 text-blue-500">
         Continue Shopping
       </Link>
+    </div>
     </div>
   );
 }
