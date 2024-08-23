@@ -12,24 +12,23 @@ import TestimonialSection from "./TestimonialSection";
 import List from "./List";
 import Contact from "./Contact";
 
-function HomePage({ cartItems, setCartItems }) {
-    
+function HomePage() {
   return (
     <>
       <div className="text-white relative">
-      <div className="absolute top-0 left-0 inset-0 bg-[url(/bg.jpg)] -z-10 blur-lg filter brightness-[0.2] backdrop-brightness-0"></div>
+        <div className="absolute top-0 left-0 inset-0 bg-[url(/bg.jpg)] -z-10 blur-lg filter brightness-[0.2] backdrop-brightness-0"></div>
         <div className="shadow-md">
           <Header />
           <List />
         </div>
         <Hero />
         <Showcase />
-        <ProductSection cartItems={cartItems} setCartItems={setCartItems} />
+        <ProductSection />
         <HeroWithPagination />
         <TrendingCategory />
         <TestimonialSection />
         <AboutUs />
-        <Contact/>
+        <Contact />
         <Footer />
       </div>
     </>

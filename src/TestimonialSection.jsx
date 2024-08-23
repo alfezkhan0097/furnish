@@ -81,7 +81,7 @@ const reviews = [
     text: "The bed frame I ordered is stunning! It’s sturdy, stylish, and exactly what I was looking for. The whole process, from ordering to delivery, was smooth and hassle-free. HomeHaven Decor is now my go-to place for all my furniture needs.",
     time: 1691263634,
     translated: false,
-  }
+  },
 ];
 
 const TestimonialSection = () => {
@@ -130,8 +130,11 @@ const TestimonialSection = () => {
 };
 
 export default TestimonialSection;
-{/* grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 */}
-        {/* <Swiper
+{
+  /* grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 */
+}
+{
+  /* <Swiper
         effect={'cards'}
                 grabCursor={true}
                 modules={[EffectCards]}
@@ -142,4 +145,5 @@ export default TestimonialSection;
               <TestimonialCard testimonial={testimonial} />
             </SwiperSlide>
           ))}
-        </Swiper> */}
+        </Swiper> */
+}

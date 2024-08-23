@@ -5,31 +5,36 @@ const products = [
   {
     id: "a",
     name: "Wall",
-    imageUrl: "https://furniturehaven.co.uk/cdn/shop/files/wall-u_400x.png?v=1698053520",
+    imageUrl:
+      "https://furniturehaven.co.uk/cdn/shop/files/wall-u_400x.png?v=1698053520",
     span: "",
   },
   {
     id: "b",
     name: "Chest Of Drawers",
-    imageUrl: "https://furniturehaven.co.uk/cdn/shop/files/Chest-of-drawers2_600x.png?v=1698040776",
+    imageUrl:
+      "https://furniturehaven.co.uk/cdn/shop/files/Chest-of-drawers2_600x.png?v=1698040776",
     span: "col-span-2 row-span-2",
   },
   {
     id: "c",
     name: "Office",
-    imageUrl: "https://furniturehaven.co.uk/cdn/shop/files/office-desk_400x.png?v=1698041790",
+    imageUrl:
+      "https://furniturehaven.co.uk/cdn/shop/files/office-desk_400x.png?v=1698041790",
     span: "",
   },
   {
     id: "d",
     name: "Coffe",
-    imageUrl: "https://furniturehaven.co.uk/cdn/shop/files/coffee-table_400x.png?v=1698041146",
+    imageUrl:
+      "https://furniturehaven.co.uk/cdn/shop/files/coffee-table_400x.png?v=1698041146",
     span: "",
   },
   {
     id: "e",
     name: "Kitchens",
-    imageUrl: "https://furniturehaven.co.uk/cdn/shop/files/kitchen2_400x.png?v=1698042107",
+    imageUrl:
+      "https://furniturehaven.co.uk/cdn/shop/files/kitchen2_400x.png?v=1698042107",
     span: "",
   },
 ];
@@ -46,8 +51,10 @@ const TrendingCategory = () => {
             key={product.id}
             className={`relative ${product.span} aspect-square overflow-hidden`}
           >
-            <div className="absolute -z-0 inset-0 bg-center bg-cover transition-transform duration-300 ease-in-out transform hover:scale-110" style={{ backgroundImage: `url(${product.imageUrl})` }}>
-            </div>
+            <div
+              className="absolute -z-0 inset-0 bg-center bg-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
+              style={{ backgroundImage: `url(${product.imageUrl})` }}
+            ></div>
             <div className="relative p-4 text-white font-bold text-lg">
               {product.name}
             </div>

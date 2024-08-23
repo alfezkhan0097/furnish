@@ -4,25 +4,26 @@ const products = [
   {
     id: "a",
     name: "Product A",
-    imageUrl: "https://furniturehaven.co.uk/cdn/shop/files/bed3_e3add4a2-4b3c-499d-957b-99dc98004c60_600x.png?v=1698043726",
+    imageUrl:
+      "https://furniturehaven.co.uk/cdn/shop/files/bed3_e3add4a2-4b3c-499d-957b-99dc98004c60_600x.png?v=1698043726",
     span: "col-span-1 ",
-    aspect: "aspect-[2/1]"
+    aspect: "aspect-[2/1]",
   },
   {
     id: "b",
     name: "Product B",
-    imageUrl: "https://furniturehaven.co.uk/cdn/shop/files/Armchairs_600x.png?v=1698043608",
+    imageUrl:
+      "https://furniturehaven.co.uk/cdn/shop/files/Armchairs_600x.png?v=1698043608",
     span: "col-span-1 row-span-2",
-    aspect: "aspect-square"
-
+    aspect: "aspect-square",
   },
   {
     id: "c",
     name: "Product C",
-    imageUrl: "https://furniturehaven.co.uk/cdn/shop/files/sofs_600x.png?v=1698043891",
+    imageUrl:
+      "https://furniturehaven.co.uk/cdn/shop/files/sofs_600x.png?v=1698043891",
     span: "",
-    aspect: "aspect-[2/1]"
-
+    aspect: "aspect-[2/1]",
   },
 ];
 
@@ -35,8 +36,10 @@ const Showcase = () => {
             key={product.id}
             className={`relative ${product.aspect} ${product.span} overflow-hidden bg-cover bg-center`}
           >
-            <div className="absolute -z-0 inset-0 bg-center bg-cover transition-transform duration-300 ease-in-out transform hover:scale-110" style={{ backgroundImage: `url(${product.imageUrl})` }}>
-            </div>
+            <div
+              className="absolute -z-0 inset-0 bg-center bg-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
+              style={{ backgroundImage: `url(${product.imageUrl})` }}
+            ></div>
             <div className="p-4 absolute z-10 text-white font-bold text-lg">
               {product.name}
             </div>

@@ -18,8 +18,8 @@ export default {
         figtree: "Figtree",
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(circle at center, hsla(0, 0%, 50%, 0.2) 20%, transparent 200%)",
-
+        "gradient-radial":
+          "radial-gradient(circle at center, hsla(0, 0%, 50%, 0.2) 20%, transparent 200%)",
       },
     },
   },

@@ -16,10 +16,15 @@ const Footer = () => {
         </div>
 
         <div className="w-max">
-          <p><b>Email:</b> contact@homehavendecor.com</p>
-          <p><b>Phone:</b> +1 (990) 003-6892, +25 (470) 281-3101
+          <p>
+            <b>Email:</b> contact@homehavendecor.com
           </p>
-          <p><b>Address:</b> Upper Hill St. Nairobi, 222</p>
+          <p>
+            <b>Phone:</b> +1 (990) 003-6892, +25 (470) 281-3101
+          </p>
+          <p>
+            <b>Address:</b> Upper Hill St. Nairobi, 222
+          </p>
           <p>70 Market Street, Harrisburg Pennsylvania</p>
           <a href="#map" className="hover:text-yellow-400 underline mt-2 block">
             SEE ON MAP →

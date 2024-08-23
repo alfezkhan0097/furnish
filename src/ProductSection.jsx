@@ -50,7 +50,7 @@ const ProductSection = () => {
   //   },
   //   // Add more products as needed
   // ];
-  const product = Object.values(products)
+  const product = Object.values(products);
   return (
     <section className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-6 text-neutral-200">
@@ -58,10 +58,7 @@ const ProductSection = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {product.map((product, index) => (
-          <Product
-            key={index}
-            product={product}
-          />
+          <Product key={index} product={product} />
         ))}
       </div>
     </section>

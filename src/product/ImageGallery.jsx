@@ -7,7 +7,11 @@ const ImageGallery = ({ images }) => {
   return (
     <div>
       <div className="mb-4">
-        <img src={selectedImage} alt="Selected Product" className="w-full rounded-lg" />
+        <img
+          src={selectedImage}
+          alt="Selected Product"
+          className="w-full rounded-lg"
+        />
       </div>
       <div className="flex space-x-2">
         {images.map((image, index) => (

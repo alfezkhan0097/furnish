@@ -2,7 +2,7 @@ import React from "react";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 
 const List = () => {
-    //just change the var below to change the header list
+  //just change the var below to change the header list
   const list = [
     {
       title: "Sofas",
@@ -49,7 +49,9 @@ const List = () => {
                   className="block rounded-lg py-2 px-3 transition group hover:bg-yellow-400"
                   href="#"
                 >
-                  <p className="font-semibold text-gray-200 group-hover:text-neutral-800">{subItem}</p>
+                  <p className="font-semibold text-gray-200 group-hover:text-neutral-800">
+                    {subItem}
+                  </p>
                 </a>
               ))}
             </div>

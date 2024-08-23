@@ -3,10 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 .input {
-    @apply w-full rounded-full border bg-white px-4 py-2 text-black shadow-md focus:outline-none;
-  }
+  @apply w-full rounded-full border bg-white px-4 py-2 text-black shadow-md focus:outline-none;
+}
 .label {
-    @apply mb-2 block w-[90%] translate-x-4 translate-y-[-140%] bg-white font-bold text-neutral-300 transition-all group-hover/f:w-min group-hover/f:translate-y-[-220%] group-hover/f:bg-transparent;
+  @apply mb-2 block w-[90%] translate-x-4 translate-y-[-140%] bg-white font-bold text-neutral-300 transition-all group-hover/f:w-min group-hover/f:translate-y-[-220%] group-hover/f:bg-transparent;
 }
 .borderef {
   @apply relative before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:bg-yellow-400 before:transition-all before:delay-150 group-hover:before:left-0 group-hover:before:w-full;
