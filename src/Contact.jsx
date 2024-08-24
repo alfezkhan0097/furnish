@@ -5,6 +5,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
+  //form function
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
@@ -14,7 +15,7 @@ export default function Contact() {
       email,
       message,
     };
-    //http://localhost:3000
+    //http://localhost:3000:change it to backend link
     try {
       const response = await fetch("http://localhost:3000/api/send", {
         method: "POST",

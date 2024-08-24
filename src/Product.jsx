@@ -13,18 +13,13 @@ const Product = ({ product }) => {
     }
   }, []);
 
-  // Save cart items to local storage whenever they change
-  // useEffect(() => {
-  //   localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  //   console.log(cartItems)
-  // }, [cartItems]);
-
   const addToCart = (product) => {
     const existingCartItems =
       JSON.parse(localStorage.getItem("cartItems")) || [];
     const updatedCartItems = [...existingCartItems, product];
     setCartItems(updatedCartItems);
     localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+    alert("Item added to cart!");
   };
   return (
     <div className="group bg-white/10 rounded-lg shadow-md overflow-hidden">

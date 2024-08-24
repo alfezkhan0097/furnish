@@ -50,6 +50,7 @@ const Hero = () => {
     <section
       className="relative group overflow-hidden h-screen bg-cover bg-center bg-no-repeat transition-all duration-300"
       style={{ backgroundImage: `url(${slides[currentSlide].imageUrl})` }}
+      id="home"
     >
       <div
         className={`absolute ${slides[currentSlide].left} top-[-10%] transition-all duration-300 container mx-auto h-full flex flex-col justify-center items-center text-center text-white`}

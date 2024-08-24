@@ -25,8 +25,11 @@ const Footer = () => {
           <p>
             <b>Address:</b> Upper Hill St. Nairobi, 222
           </p>
-          <p>70 Market Street, Harrisburg Pennsylvania</p>
-          <a href="#map" className="hover:text-yellow-400 underline mt-2 block">
+          <p> Longonot Rd, Kenya</p>
+          <a
+            href="https://g.co/kgs/PAH2rws"
+            className="hover:text-yellow-400 underline mt-2 block"
+          >
             SEE ON MAP →
           </a>
         </div>

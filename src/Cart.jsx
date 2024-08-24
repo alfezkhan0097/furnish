@@ -51,7 +51,7 @@ function Cart() {
                   />
                 </div>
                 <div className="p-4">
-                  <h2 className="text-lg font-bold mb-2">{item.title}</h2>
+                  <h2 className="text-lg font-bold mb-2">{item.name}</h2>
                   <p className="text-neutral-300 mb-4">${item.price}</p>
                   <button
                     onClick={() => removeFromCart(index)}
@@ -66,6 +66,9 @@ function Cart() {
         )}
         <Link to="/" className="block mt-4 text-blue-500">
           Continue Shopping
+        </Link>
+        <Link to="/checkout" className="block mt-4 text-blue-500">
+          checkout
         </Link>
       </div>
     </div>

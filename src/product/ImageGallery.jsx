@@ -20,7 +20,7 @@ const ImageGallery = ({ images }) => {
             src={image}
             alt={`Product ${index + 1}`}
             className={`w-20 h-20 object-cover cursor-pointer rounded-lg ${
-              selectedImage === image ? "ring-2 ring-indigo-500" : ""
+              selectedImage === image ? "ring-2 ring-yellow-400" : ""
             }`}
             onClick={() => setSelectedImage(image)}
           />
