@@ -1,7 +1,7 @@
 // ProductDetails.jsx
 import React from "react";
 import { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 const ProductDetails = ({ product }) => {
   const [cartItems, setCartItems] = useState([]);
   // Retrieve cart items from local storage when the app loads
@@ -36,8 +36,11 @@ const ProductDetails = ({ product }) => {
         >
           Add to Cart
         </button>
-        <button className="w-full bg-yellow-400 font-semibold text-white py-2 rounded hover:scale-[1.05] transition duration-200">
-          Buy Now
+        <button
+        to="checkout"  
+        onClick={() => addToCart(product)} 
+        className="w-full bg-yellow-400 font-semibold text-white py-2 rounded hover:scale-[1.05] transition duration-200">
+          <Link to="/checkout">Buy Now</Link>
         </button>
       </div>
     </div>

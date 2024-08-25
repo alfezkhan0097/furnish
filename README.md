@@ -1,8 +1,12 @@
-# React + Vite
+so you don't have to change anything.
+to run the app open one terminal. open the folder where this file is interminal and run "npm run devs" but first check if you have the folder named: "node_modules" if not then run npm install. then run devs.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+inside src>product>products.js it is the file which contains the whole data you can change add or edit data here it will reflect through whole app. 
+cart items are stored in localstorage and will be there even if you turn the app off.
+dont bother with app.jsx below are files arrangement
 
-Currently, two official plugins are available:
+HomePage.jsx have Header,Hero,HeroWithPagination,List,Productsection,Showcase,Testimonial,TrendingSection.jsx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Shop.jsx and ProductPage.jsx are on seperate pages so is Cart and checkout.
+
+when you present this app try to use the product with complete data or you add yourself. make sure images arent too high quality or loading time may wary.

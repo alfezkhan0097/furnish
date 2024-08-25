@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 const CheckoutPage = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -47,7 +48,8 @@ const CheckoutPage = () => {
     <div className="relative min-h-svh flex flex-col justify-center p-12 items-center">
       <div className="absolute min-h-svh top-0 left-0 inset-0 bg-[url(/bg.jpg)] -z-10 blur-lg filter brightness-[0.2] backdrop-brightness-0"></div>
       <div className="text-2xl text-white font-inter mb-12">
-        HomeHaven Decor
+        <Link to="/">HomeHaven Decor</Link>
+        
       </div>
       <div className="checkout-page relative p-4 w-full grid grid-cols-2 gap-6 bg-white/10 border border-white/50 rounded-2xl *:text-white ">
         <h1 className="text-2xl mb-6 col-span-2">Checkout</h1>
