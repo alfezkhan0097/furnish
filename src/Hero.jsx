@@ -1,6 +1,8 @@
 // src/components/Hero.jsx
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
@@ -59,12 +61,12 @@ const Hero = () => {
           {slides[currentSlide].title}
         </h1>
         <p className="text-lg mb-6">{slides[currentSlide].description}</p>
-        <a
-          href="/shop"
+        <Link
+          to="/shop"
           className="px-6 py-3 bg-neutral-800/40 text-white rounded-lg hover:bg-neutral-950"
         >
           Shop Now
-        </a>
+        </Link>
       </div>
       <button
         onClick={prevSlide}

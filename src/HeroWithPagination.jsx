@@ -1,6 +1,6 @@
 // src/components/HeroWithPagination.jsx
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const slides = [
   {
     title: "Design for your Comfort",
@@ -40,12 +40,12 @@ const HeroWithPagination = () => {
         <h1 className={`text-4xl font-bold mb-4 ${slides[currentSlide].color}`}>
           {slides[currentSlide].title}
         </h1>
-        <a
-          href="/shop"
+        <Link
+          to="/shop"
           className="px-6 py-3 bg-neutral-800/40 text-white rounded-lg hover:bg-neutral-950"
         >
           Shop Now
-        </a>
+        </Link>
       </div>
       <button
         onClick={prevSlide}
