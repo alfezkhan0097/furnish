@@ -4,15 +4,26 @@ import dotenv from "dotenv";
 import nodemailer from "nodemailer";
 import bodyParser from "body-parser";
 import cors from "cors";
-
+import path from "path"
+import { fileURLToPath } from 'url';
 // Load environment variables from .env file
 dotenv.config();
 
 // Initialize Express app
 const app = express();
+// Get the current file path
+const __filename = fileURLToPath(import.meta.url);
+
+// Derive the directory name from the file path
+const __dirname = path.dirname(__filename);
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '../dist'))); //client/dist
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist', 'index.html'));
+});
+
 // Define a simple route
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -84,7 +95,7 @@ app.post("/checkout", (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
