@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node server/test.js"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
