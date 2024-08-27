@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: black; /* Color of the thumb */ /* Rounded corners */
+  background: white; /* Color of the thumb */ /* Rounded corners */
   max-height: 50px;
   margin: 1px;
   width: 4px;

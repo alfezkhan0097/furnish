@@ -3,7 +3,7 @@ import React from "react";
 const products = [
   {
     id: "a",
-    name: "Product A",
+    name: "Bedroom",
     imageUrl:
       "https://furniturehaven.co.uk/cdn/shop/files/bed3_e3add4a2-4b3c-499d-957b-99dc98004c60_600x.png?v=1698043726",
     span: "col-span-1 ",
@@ -11,7 +11,7 @@ const products = [
   },
   {
     id: "b",
-    name: "Product B",
+    name: "Study Room",
     imageUrl:
       "https://furniturehaven.co.uk/cdn/shop/files/Armchairs_600x.png?v=1698043608",
     span: "col-span-1 row-span-2",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: "c",
-    name: "Product C",
+    name: "Sitting room",
     imageUrl:
       "https://furniturehaven.co.uk/cdn/shop/files/sofs_600x.png?v=1698043891",
     span: "",
