@@ -32,7 +32,7 @@ const CheckoutPage = () => {
     e.preventDefault();
     try {
       // Send form data and cart items to the backend
-      const response = await axios.post("http://localhost:3000/checkout", {
+      const response = await axios.post("/checkout", {
         ...formData,
         cartItems,
       });
